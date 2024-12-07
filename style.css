@@ -17,7 +17,7 @@ header{
     flex-wrap: wrap;
     align-self: center;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: .5rem 1.5rem;
 }
 .logo-nav-container {
     display: flex;
@@ -70,10 +70,12 @@ header{
     background-color: #ffece7;
     border-radius: 3px;
     transform: scale(1.2);
+    text-decoration: underline;
 }
 .button-container:hover{
     background-color: #577a6b;
     transform: scale(1.1);
+    cursor: pointer;
     
 }
 
@@ -107,6 +109,79 @@ header{
     padding: 10px;
     opacity: 0.8; 
     align-self: flex-end;
+}
+.news-cards{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.082)
+}
+.news-cards h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    padding: 2rem;
+    gap: 1em;   
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;   
+    width: calc(33% - 10px);    
+    display: flex;
+    flex-direction: column; 
+    transition: 250ms;
+}
+
+.image-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+.info-card {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.info-card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+.info-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+button {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    background-color: #f19a9a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 200ms;
+}
+
+button:hover {
+    background-color: #ca8282;
+}
+.card:hover{
+    transform: scale(1.03);
+    cursor: pointer;
 }
 
 
