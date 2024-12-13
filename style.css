@@ -10,6 +10,34 @@ body{
     background-size: cover;
     background-position: center;
 }
+
+
+.info-widget {
+    position: fixed; 
+    bottom: 1rem;
+    right: 1rem; 
+    background-color: #254e3e;
+    padding: 1rem;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+    transition: 200ms;
+}
+
+.info-widget img{
+    width: 100%;
+    filter: invert(100);
+}
+.info-widget:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
 header{
     display: flex;
     background-color: #FEDBD3;
