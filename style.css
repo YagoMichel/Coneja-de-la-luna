@@ -25,22 +25,29 @@ header{
     gap: 20px;
 }
 
-
+.logo-image-container{
+    width: 3rem;
+    padding: 3px 10px;
+    transition: 200ms;
+    
+}
+.logo-image-container img{
+    width: 100%;
+    
+}
 
 .nav-bar-conteiner ul{
     list-style: none;
     display: flex; 
     flex-wrap: wrap;
     align-items: center;
-    padding: 0;
-    margin: 0;
+    gap: 1rem;
     
 }
 .nav-bar-conteiner ul a{
     font-style: none;
     text-decoration: none;
-    padding: .8rem;
-    margin: 0 1em;
+    padding: 1.5rem .8rem;
     transition: 200ms;
 
 }
@@ -70,13 +77,19 @@ header{
     background-color: #ffece7;
     border-radius: 3px;
     transform: scale(1.2);
-    text-decoration: underline;
+    text-decoration: underline color(srgb 0 0 0);
 }
 .button-container:hover{
     background-color: #577a6b;
     transform: scale(1.1);
     cursor: pointer;
     
+}
+.logo-image-container:hover{
+    background-color: #ffece7;
+    border-radius: 3px;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .hero {
@@ -118,14 +131,13 @@ header{
 }
 .news-cards h1 {
     font-size: 2rem;
-    margin-bottom: 1rem;
     padding: 2rem;
 }
 .container-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;  
-    padding: 2rem;
+    padding: 0 2rem;
     gap: 1em;   
 }
 
