@@ -225,3 +225,57 @@ header{
 .contact-cards button:hover{
     background-color: #577a6b;
 }
+
+
+
+footer {
+    background-color: #496B5D; 
+    margin: 3rem;
+    border-radius: 10px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 1rem 2rem;
+    flex-wrap: wrap; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff; 
+}
+.left-footer-container{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.logo-footer-container{
+    width: 5rem;
+    background-color: white;
+    padding: 2px;
+    border-radius: 100%;
+    border: 1px solid rgb(255, 255, 255);
+}
+.logo-footer-container img{
+    width: 100%;
+}
+.social-media-footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 3.5rem;
+}
+.social-media-footer-container ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+.social-media-footer-container li{
+    width: 3rem;
+    border-radius: 100%;
+    padding: 0.8rem;
+    border: solid white;
+}
+.social-media-footer-container img{
+    filter: invert(100);
+    width: 100%;
+    transition: 200ms;
+}
+.social-media-footer-container li img:hover{
+    transform: scale(1.2);
+}
