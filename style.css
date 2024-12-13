@@ -152,7 +152,30 @@ header{
     opacity: 0.8; 
     align-self: flex-end;
 }
-
+/* Creacion de la seccion sobre nosotros */
+.about-us-container{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+.info-about h1{
+    line-height: 3;
+    font-size: 2rem;
+}
+.info-about p{
+    font-style: italic;
+    color: #666;
+}
+.image-about-container{
+    width: 40px;
+}
+.image-about-container{
+    width: 100%;
+}
 /* Creacion de tarjetas de la seccion de noticias */
 .news-cards{
     text-align: center;
@@ -209,7 +232,7 @@ header{
 }
 
 
-.news-cards button {
+.news-cards button, .about-us-container button {
     margin: 1rem 0;
     padding: 1rem 2rem;
     background-color: #f19a9a;
@@ -221,7 +244,7 @@ header{
     transition: 200ms;
 }
 
-.news-cards button:hover {
+.news-cards button:hover ,.about-us-container button:hover {
     background-color: #ca8282;
 }
 .card:hover{
