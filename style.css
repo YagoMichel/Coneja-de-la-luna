@@ -11,7 +11,7 @@ body{
     background-position: center;
 }
 
-
+/* Creacion de un widget de informacion */
 .info-widget {
     position: fixed; 
     bottom: 1rem;
@@ -37,7 +37,7 @@ body{
     transform: scale(1.2);
 }
 
-
+/* Creacion de un header con display flex */
 header{
     display: flex;
     background-color: #FEDBD3;
@@ -119,6 +119,7 @@ header{
     transform: scale(1.1);
     cursor: pointer;
 }
+/* Seccion de wrapper imagen inicial que carga la pagina */
 
 .hero {
     width: 100%;
@@ -151,6 +152,8 @@ header{
     opacity: 0.8; 
     align-self: flex-end;
 }
+
+/* Creacion de tarjetas de la seccion de noticias */
 .news-cards{
     text-align: center;
     margin: 0;
@@ -162,16 +165,17 @@ header{
     padding: 2rem;
 }
 .container-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;  
-    padding: 0 3rem;
-    gap: 1em;   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+    justify-items: center;
+    gap: 2rem;
+    padding: 2rem;
 }
 
 .card {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #ffff;
+    border: 1px solid #ffff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;   
@@ -225,6 +229,7 @@ header{
     cursor: pointer;
 }
 
+/* Creacion de tarjetas para ubicacion y contacto */
 .contact-cards{
     text-align: center;
     margin: 3rem;
@@ -254,7 +259,7 @@ header{
     background-color: #577a6b;
 }
 
-
+/* Creacion de un foooter con el uso de grid para poder centrar la informacion */
 
 footer {
     background-color: #496B5D; 
@@ -278,22 +283,16 @@ footer {
     padding: 2px;
     border-radius: 100%;
     border: 1px solid rgba(255, 255, 255, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 .logo-footer-container img{
     width: 100%;
 }
-.social-media-footer-container{
-    display: flex;
-    justify-content: space-between;
-    gap: 3.5rem;
-}
+
 .social-media-footer-container ul{
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 .social-media-footer-container li {
     width: 1.5rem;
@@ -304,10 +303,6 @@ footer {
     align-items: center; 
     justify-content: center;
     transition: 200ms;
-}
-
-.social-media-footer-container li:hover {
-    transform: scale(1.2); 
 }
 
 .social-media-footer-container img{
@@ -321,4 +316,22 @@ footer {
     line-height: 1.5;
     margin-left: 2rem;
 
+}
+
+.social-media-footer-container li:hover {
+    transform: scale(1.2); 
+}
+
+/* Hacer Resposivas las tarjetas de la seccion de noticias */
+
+@media (max-width: 1300px) {
+    .container-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container-card {
+        grid-template-columns: 1fr; 
+    }
 }
