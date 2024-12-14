@@ -211,17 +211,22 @@ header{
     display: flex;
     flex-direction: column; 
     justify-content: center;
+    align-items: center;
     transition: 250ms;
+}
+.image-card{
+    width: 90%;
+    
 }
 
 .image-card img {
-    width: 100%;
-    height: 250px;
+    width: 60%;
     object-fit: cover;
 }
 
 
 .info-card {
+    width: 70%;
     padding: 1.5rem;
     text-align: left;
 }
@@ -232,7 +237,8 @@ header{
 }
 
 .info-card p {
-    font-size: 0.9rem;
+    font-size: 16px;
+    text-align: center;
     color: #666;
 }
 
@@ -348,9 +354,11 @@ header{
     cursor: pointer;
     background-color: #496B5D;
     color: #ddd;
-    padding: 8px 5px;
+    padding: 8px 50px;
     border: none;
     transition: 200ms;
+    
+    border-radius: 5px;
 }
 .contact-cards button:hover{
     background-color: #577a6b;
