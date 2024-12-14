@@ -167,13 +167,18 @@ header{
     font-size: 2rem;
 }
 .info-about p{
-    font-style: italic;
-    color: #666;
+    color: #424242;
 }
 .image-about-container{
-    width: 40px;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
-.image-about-container{
+.image-about-container img{
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.082);
     width: 100%;
 }
 /* Creacion de tarjetas de la seccion de noticias */
