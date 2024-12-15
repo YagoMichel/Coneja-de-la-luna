@@ -334,7 +334,7 @@ header{
 }
 /* Creacion de tarjetas para ubicacion y contacto */
 .contact-cards{
-    text-align: center;
+    text-align: center; 
     margin: 3rem;
 }
 .contact-cards h1{
@@ -342,10 +342,14 @@ header{
     font-size: 2rem;
 }
 .card-coontainer-contact{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+    justify-content: center;
     align-items: center;
+    justify-items: center;
+    gap: 2rem;
+    padding: 2rem;
 }
 .card-coontainer-contact .card h2{
     text-align: center;
@@ -427,16 +431,88 @@ footer {
     transform: scale(1.2); 
 }
 
+
 /* Hacer Resposivas las tarjetas de la seccion de noticias */
 
 @media (max-width: 1300px) {
     .container-card {
         grid-template-columns: repeat(2, 1fr);
     }
+    .card-coontainer-contact {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    .card-coontainer-contact .card:nth-child(3) {
+        grid-column: 1 / 3;
+        justify-self: center; 
+    }
 }
 
 @media (max-width: 768px) {
     .container-card {
         grid-template-columns: 1fr; 
+    }
+    .card-coontainer-contact {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    
+    
+    
+
+/* Responsividad para tablets tarjetas de contacto */
+    .card-coontainer-contact {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        gap: 1.5rem;
+    }
+
+    .card-coontainer-contact .card:nth-child(3) {
+        grid-column: 1; /* Restablece la posición automática */ 
+    }
+/* Responsividad para tablets footer */
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .info-footer {
+        text-align: center;
+        margin: 1rem 0 0 0;
+    }
+
+    .left-footer-container {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+
+/* Responsividad para móviles */
+@media (max-width: 550px) {
+    
+/* Contenedor sobre nosotros */
+    .image-about-container{
+        width: 18rem;
+    }
+/* Tarjetas para celulares */
+    .card {
+        width: 18rem;
+    }
+/* Footer para celulares */
+    footer {
+        margin: 1rem;
+        padding: 0.8rem;
+        gap: 1rem;
+    }
+
+    .social-media-footer-container ul {
+        justify-content: center;
+    }
+
+    .info-footer {
+        font-size: 0.8rem;
+    }
+    .logo-footer-container {
+        display: none;
     }
 }
