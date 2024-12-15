@@ -481,9 +481,20 @@ footer {
         display: inline-block;
         cursor: pointer;
     }
+     /* Responsividad de tarjetas de tienda */
+    
+    .store-cards{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        padding: 1rem 2rem;
+    }
+
 }    
 @media (max-width: 768px) {
 
+    .info-widget {
+        width: 20px;
+    }
     /* Responsividad boton de navegacion */
     .button-container {
         gap: 5px; 
@@ -495,7 +506,6 @@ footer {
     .button-container p{
         font-size: 12px;
     }
-
 /* Responsividad para tablets tarjetas de contacto */
     .card-coontainer-contact {
         grid-template-columns: 1fr; /* Cambia a una sola columna */
@@ -546,6 +556,12 @@ footer {
         font-size: 1rem;
     }
     .info-about p{
+        font-size: 14px;
+    }
+    .big-card h1{
+        font-size: 1rem;
+    }
+    .small-card h2{
         font-size: 14px;
     }
 /* Tarjetas para celulares */
