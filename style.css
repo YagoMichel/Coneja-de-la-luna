@@ -584,6 +584,9 @@ footer {
     .news-cards h1 {
         font-size: 1rem;
     }
+    .info-card h2{
+        font-size: 14px;
+    }
 /* Footer para celulares */
     
     footer {
