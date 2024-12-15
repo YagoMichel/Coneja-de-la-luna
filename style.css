@@ -168,6 +168,7 @@ header{
 }
 .info-about p{
     color: #424242;
+    font-size: 22px;
 }
 .image-about-container{
     width: 20rem;
@@ -214,16 +215,21 @@ header{
     align-items: center;
     transition: 250ms;
 }
-.image-card{
+.image-card {
     width: 90%;
-    
+    height: 12rem; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-card img {
-    width: 60%;
+    width: 100%; 
+    height: 100%;
     object-fit: cover;
+    object-position: center;
 }
-
 
 .info-card {
     width: 70%;
@@ -421,7 +427,6 @@ footer {
 .info-footer{
     text-align: right;
     font-size: 14px;
-    font-size: 0.9rem;
     line-height: 1.5;
     margin-left: 2rem;
 
@@ -432,12 +437,14 @@ footer {
 }
 
 
-/* Hacer Resposivas las tarjetas de la seccion de noticias */
+
 
 @media (max-width: 1300px) {
+    /* Hacer Resposivas las tarjetas de la seccion de noticias */
     .container-card {
         grid-template-columns: repeat(2, 1fr);
     }
+    /* Hacer responsivas las tarjetas de contacto */
     .card-coontainer-contact {
         grid-template-columns: repeat(2, 1fr); 
     }
@@ -447,18 +454,14 @@ footer {
         justify-self: center; 
     }
 }
-
-@media (max-width: 768px) {
+@media (max-width:900px){
+/* Responsividad para las tarjetas de noticias */
     .container-card {
         grid-template-columns: 1fr; 
     }
-    .card-coontainer-contact {
-        justify-content: center;
-        gap: 1.5rem;
-    }
-    
-    
-    
+}    
+@media (max-width: 768px) {
+
 
 /* Responsividad para tablets tarjetas de contacto */
     .card-coontainer-contact {
@@ -485,6 +488,9 @@ footer {
         justify-content: center;
         gap: 1.5rem;
     }
+    .logo-footer-container {
+        display: none;
+    }
 }
 
 /* Responsividad para móviles */
@@ -499,6 +505,7 @@ footer {
         width: 18rem;
     }
 /* Footer para celulares */
+    
     footer {
         margin: 1rem;
         padding: 0.8rem;
@@ -512,7 +519,5 @@ footer {
     .info-footer {
         font-size: 0.8rem;
     }
-    .logo-footer-container {
-        display: none;
-    }
+    
 }
